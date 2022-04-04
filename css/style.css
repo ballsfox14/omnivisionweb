@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color-primary: #003366;
+  --color-title: #000;
+  --align-title: left;
+  --padding-container: 100px 0;
+  --width-container: 90%;
+  --max-width-container: 1200px;
+  --color-btn: #003366;
+  --text-btn: #fff;
+  --padding-btn: 20px 35px;
+}
+
+/*Inicio de estilos de menu*/
+
+ .omni__bg {
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
+  -moz-box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
+  box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
+}
+
+/*Fin de estilo de menu*/
+
+.omni__leyenda h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #003366;
+}
+
+.contenedor {
+  width: var(--width-container);
+  max-width: var(--max-width-container);
+  padding: var(--padding-container);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.omni__portada {
+  height: 50vh;
+  min-width: 500px;
+  position: relative;
+  --padding-container: 0;
+}
+
+.omni__contenedor {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 3fr 2fr;
+  place-items: center;
+  gap: 20px;
+}
+.omni__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.omni__parrafo {
+  font-size: 1.2rem;
+  margin: 25px 0;
+}
+.omni__btn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+.omni__img {
+  width: 95%;
+}
+
+/*Inicio de estilos de servicios*/
+.omni__servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  gap: 20px;
+}
+
+.omni__datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+}
+
+.omni__servicios .omni__datos i {
+  font-size: 4rem;
+}
+.ommi__servivio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #003366;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.bi-apple {
+  font-size: 3rem;
+}
+
+.omni__contrata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*Final de estilos de servicios*/
+
+/*Inicio de Estilos de Card de Promociones*/
+.omni__promociones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 40px 0;
+}
+.omni__promociones .omni__card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+}
+.omni__promociones .omni__card .omni__box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #003366;
+  -webkit-box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
+  -moz-box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
+  box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
+}
+.omni__promociones .omni__card .box .omni__contenido {
+  padding: 20px;
+  text-align: center;
+}
+
+.omni__contenido h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.omni__contenido h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.omni__contenido small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.omni__contenido p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+/*Fin de Estilos de Card de Promociones*/
+
+/*Inicio de estilos Parallax*/
+.parallax {
+  background-image: url("/images/parallax.jpg");
+  width: 100%;
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ommi__lema {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.ommi__lema h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+/*Fin de estilos parallax*/
+
+/*Inicio de estilo de formulario de contacto*/
+.omni__contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 90px;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+.omni__contacto h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 35px;
+  font-size: 3rem;
+}
+.omni__contacto p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.omni__contacto a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.omni__contacto a i {
+  margin-right: 35px;
+  font-size: 2rem;
+}
+
+.omni__contacto form .omni__text,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1rem;
+  border: 1px solid #003366;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.omni__contacto form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.omni__contacto .omni__btn {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #003366;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.omni__contacto .omni__btn:hover {
+  background: #fff;
+}
+/*Fin de estilo de formulario me contacto*/
+
+/*Inicio de estilo de footer*/
+
+.ommi__contenedor {
+  background: #003366;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+.omni__footer {
+  display: grid;
+  grid-template-columns: 500px repeat(2, 1fr);
+  gap: 20px;
+}
+.omni__empresa h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.omni__empresa small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+}
+.omni__empresa i {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+/*Fin de estilo de footer*/
