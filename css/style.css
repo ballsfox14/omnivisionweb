@@ -13,21 +13,7 @@
 }
 
 
-/*Inicio de estilos de about*/
 
-.omni__about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.omni__about P {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
- text-align: justify;
-  color: #003366;
-}
-/*Fin de estilos de about/
 
 /*Inicio de estilos de menu*/
 
@@ -87,6 +73,23 @@
 .omni__img {
   width: 95%;
 }
+
+
+/*Inicio de estilos de about*/
+.omni__about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.omni__about P {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+ text-align: justify;
+  color: #003366;
+}
+/*Fin de estilos de about/
+
 
 /*Inicio de estilos de servicios*/
 .omni__servicios {
