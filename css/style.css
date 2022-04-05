@@ -12,10 +12,9 @@
   --padding-btn: 20px 35px;
 }
 
-
 /*Inicio de estilos de menu*/
 
- .omni__bg {
+.omni__bg {
   -webkit-box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
   -moz-box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
   box-shadow: 0px 0px 20px 10px rgba(62, 66, 66, 0.03);
@@ -46,13 +45,15 @@
   --padding-container: 0;
 }
 
-.omni__contenedor {
+.omni__bienvenido {
   display: grid;
   height: 100%;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a a";
   place-items: center;
   gap: 20px;
 }
+
 .omni__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -72,20 +73,22 @@
   width: 95%;
 }
 
-
 /*Inicio de estilos de about*/
 .omni__about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "b b";
   gap: 20px;
 }
+
 .omni__about P {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
- text-align: justify;
+  text-align: justify;
   color: #003366;
 }
+
 /*Fin de estilos de about/
 
 
@@ -182,7 +185,7 @@
 
 /*Inicio de estilos Parallax*/
 .parallax {
-  background-image: url('../images/parallax.jpg');
+  background-image: url("../images/parallax.jpg");
   width: 100%;
   height: 250px;
   background-attachment: fixed;
@@ -313,3 +316,29 @@ textarea {
   color: #fff;
 }
 /*Fin de estilo de footer*/
+
+@media only screen and (max-width: 576px) {
+  .omni__info {
+    grid-column-start: a;
+    grid-column-end: a;
+    text-align: center;
+  }
+  .omni__img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .omni__about .omni_a {
+    grid-template-areas: "b b";
+    grid-column-start: b;
+    grid-column-end: b;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .omni__about .omni_a {
+    grid-template-areas: "b b";
+    grid-column-start: b;
+    grid-column-end: b;
+  }
+}
