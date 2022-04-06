@@ -101,18 +101,16 @@
 
 @media only screen and (max-width: 576px) {
   .omni__about .omni_a {
-    grid-template-areas:
-      "b b";
-      grid-column-start: b;
-      grid-column-end: b;
+    grid-template-areas: "b b";
+    grid-column-start: b;
+    grid-column-end: b;
   }
 }
 @media only screen and (max-width: 992px) {
   .omni__about .omni_a {
-    grid-template-areas:
-      "b b";
-      grid-column-start: b;
-      grid-column-end: b;
+    grid-template-areas: "b b";
+    grid-column-start: b;
+    grid-column-end: b;
   }
 }
 /*Fin de estilos de about/
@@ -149,43 +147,34 @@
   font-size: 3rem;
 }
 
-.omni__contrata {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-/*Final de estilos de servicios*/
+/*Inicio de estilos de promociones*/
 
-/*Inicio de Estilos de Card de Promociones*/
-.omni__promociones {
+.omni__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  line-height: 50px;
   padding: 40px 0;
-}
-.omni__promociones .omni__card {
-  position: relative;
-  width: 320px;
-  height: 440px;
-}
-.omni__promociones .omni__card .omni__box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #003366;
+  max-width: 90%;
+  height: 50vh;
   -webkit-box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
   -moz-box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
   box-shadow: 0px 0px 16px 10px rgba(0, 51, 102, 0.09);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
-.omni__promociones .omni__card .box .omni__contenido {
-  padding: 20px;
-  text-align: center;
+
+@media only screen and (max-width: 576px) {
+  .omni__box{
+    max-width: 100%;
+  }
 }
+
+
+
+/*Fin de estilos de promociones*/
+
 
 .omni__contenido h2 {
   font-family: "Roboto", sans-serif;
