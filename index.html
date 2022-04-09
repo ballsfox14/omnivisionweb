@@ -1,283 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/grid.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OmnivisionWeb</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>OmnivisionWeb</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light omni__bg">
-      <div class="container">
-        <a class="navbar-brand" href="#">Omnivision Omnicom</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav m-auto">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Internet</a>
-            <a class="nav-link" href="#">Cable</a>
-            <a class="nav-link" href="#">Publicidad</a>
-          </div>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light omni__bg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Omnivision Omnicom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav m-auto">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#">Internet</a>
+          <a class="nav-link" href="#">Cable</a>
+          <a class="nav-link" href="#">Publicidad</a>
         </div>
       </div>
-    </nav>
-
-    <header class="omni__portada">
-      <div class="omni__bienvenido contenedor">
-        <div class="omni__info">
-          <h1 class="omni__title">bienvenidos</h1>
-          <p class="omni__parrafo">
-            Omnivision Omnicom la mejor señal del depártamento de Chalatenango
-          </p>
-          <a class="omni__btn btn btn-primary" href="#">Saber mas</a>
-        </div>
-        <img class="omni__img" src="images/portada.svg" alt="" />
-      </div>
-    </header>
-
-    <main>
-      <section class="omni__contenedor">
-        <div class="card__omni">
-          <div class="omni__cover">
-            <img src="images/women.png" alt="" />
-            <div class="img__back"></div>
-          </div>
-          <div class="omni__descripcion">
-            <h2>¿Quienes Somos?</h2>
-            <p>
-              Somos una empresa especializada en brindar servicios de
-              telecomunicaciones, entretenimiento y seguridad electrónica,
-              contando con personal calificado,excelencia en el servicio y
-              procesos técnicos y empresariales bajo los mejores estándares de
-              calidad, que nos permiten satisfacer las necesidad y superar las
-              expectativas de nuestros clientes y proveedores, en todo el país
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
+  </nav>
 
 
-    <section>
-      <div class="omni__leyenda">
-        <h2 class="text-center">Servicios</h2>
-      </div>
-
-      <div class="omni__servicios__box">
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-tv"></i>
-          <small>Tv por cable</small>
-        </div>
-
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-ethernet"></i>
-          <small>Internet</small>
-        </div>
-
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-wifi"></i>
-          <small>Internet inalambrico</small>
-        </div>
-
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-house-lock"></i>
-          <small>Sistema de videovigilancia</small>
-        </div>
-
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-rectangle-ad"></i>
-          <small>Publicidad</small>
-        </div>
-
-        <div class="omni__servicio__box">
-          <i class="fa-solid fa-tv"></i>
-          <small>Canal local</small>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-primary">Saber mas</button>
         </div>
       </div>
-
-    </section>
-
-      
-      <div class="omni__leyenda">
-        <h2 class="text-center">Promociones</h2>
-      </div>
-
-      <div class="container p-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
-            <div class="omni__box">
-              <div class="omni__contenido">
-                <h2>$25.00</h2>
-                <h3>7 Megas</h3>
-                <div class="text-center">
-                  <a class="btn btn-primary" href="#">Solicitar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
-            <div class="omni__box">
-              <div class="omni__contenido">
-                <h2>$29.99</h2>
-                <h3>7 Megas</h3>
-                <small>Paquete Incluye</small>
-                <p>Mas de 80 Canales</p>
-                <div class="text-center">
-                  <a class="btn btn-primary" href="#">Solicitar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
-            <div class="omni__box">
-              <div class="omni__contenido">
-                <h2>$35.00</h2>
-                <h3>10 Megas</h3>
-                <small>Paquete Incluye</small>
-                <p>Mas de 80 Canales</p>
-                <div class="text-center">
-                  <a class="btn btn-primary" href="#">Solicitar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
-            <div class="omni__box">
-              <div class="omni__contenido">
-                <h2>$45.00</h2>
-                <h3>20 Megas</h3>
-                <small>Paquete Incluye</small>
-                <p>Mas de 80 Canales</p>
-                <div class="text-center">
-                  <a class="btn btn-primary" href="#">Solicitar</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="carousel-item">
+        <img src="images/img2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-primary">Saber mas</button>
         </div>
       </div>
-
-      <section class="parallax">
-        <div class="ommi__lema">
-          <h2>Internet sin limte de descarga</h2>
+      <div class="carousel-item">
+        <img src="images/img3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-primary">Saber mas</button>
         </div>
-      </section>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <section class="omni__contacto contenedor p-5">
-        <div class="omni__form">
-          <h2>Contactanos</h2>
+  
+  <main>
+    <section class="omni__contenedor">
+      <div class="card__omni">
+        <div class="omni__cover">
+          <img src="images/women.png" alt="" />
+          <div class="img__back"></div>
+        </div>
+        <div class="omni__descripcion">
+          <h2>¿Quienes Somos?</h2>
           <p>
-            Envia tu inquietud, en menos de 24 horas, soporte se contactara
-            contigo
+            Somos una empresa especializada en brindar servicios de
+            telecomunicaciones, entretenimiento y seguridad electrónica,
+            contando con personal calificado,excelencia en el servicio y
+            procesos técnicos y empresariales bajo los mejores estándares de
+            calidad, que nos permiten satisfacer las necesidad y superar las
+            expectativas de nuestros clientes y proveedores, en todo el país
           </p>
-          <a href="https://wa.link/nd2r1n" target="_blank"
-            ><i class="omni__iconos fa-solid fa-phone"></i>+503 7670-0749</a
-          >
-          <a href="mailto:noc@omnivision.com.sv" target="_blank">
-            <i class="omni__iconos fa-regular fa-envelope"></i
-            >noc@omnivision.com.sv
-          </a>
-          <a href="#"
-            ><i class="omni__iconos fa-solid fa-map-location-dot"></i>Carr. a
-            Chalatenango, com, Caserio Amayo, 300 Metros Al Desvio de Amayo,
-            Tejutla, Chalatenango</a
-          >
         </div>
-        <form action="#" autocomplete="off">
-          <input
-            class="omni__text"
-            type="text"
-            name="name"
-            id="<em></em>"
-            placeholder="Nombre Completo"
-          />
-          <input
-            class="omni__text"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="juanito@dominio.com"
-          />
-          <textarea
-            class="omni__text"
-            name="message"
-            id="message"
-            cols=""
-            rows=""
-          ></textarea>
-          <input
-            class="omni__btn"
-            type="submit"
-            name="send"
-            id="send"
-            value="Escribe mensaje"
-          />
-        </form>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="ommi__contenedor p-3">
-        <footer class="omni__footer">
-          <div class="omni__empresa">
-            <h4>Redes Sociales</h4>
-            <a
-              href="https://www.facebook.com/omnivision.omnicom"
-              target="_blank"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a
-              href="https://twitter.com/omnivision_tv?s=20&t=RXsaF6Bn_3QMUWWY45aaTQ"
-              target="__blank"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="https://wa.link/nd2r1n" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
-          </div>
-          <div class="omni__empresa">
-            <h4>Soporte Tecnico</h4>
-            <small>NOC: +503 7670-0749</small><br />
-            <small>noc@omnivision.com.sv</small><br />
-          </div>
-          <div class="omni__empresa">
-            <h4>Atencion al cliente</h4>
-            <small>Chalatenango: <span>+503 7733-8982</span></small
-            ><br />
-            <small>La Palma: <span>+503 7870-9928</span></small
-            ><br />
-            <small>Amayo: <span>+503-7870-9591</span></small
-            ><br />
-          </div>
-        </footer>
-      </section>
-    </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <section>
+    <div class="omni__leyenda">
+      <h2 class="text-center">Servicios</h2>
+    </div>
+
+    <div class="omni__servicios__box">
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-tv"></i>
+        <small>Tv por cable</small>
+      </div>
+
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-ethernet"></i>
+        <small>Internet</small>
+      </div>
+
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-wifi"></i>
+        <small>Internet inalambrico</small>
+      </div>
+
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-house-lock"></i>
+        <small>Sistema de videovigilancia</small>
+      </div>
+
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-rectangle-ad"></i>
+        <small>Publicidad</small>
+      </div>
+
+      <div class="omni__servicio__box">
+        <i class="fa-solid fa-tv"></i>
+        <small>Canal local</small>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="omni__leyenda">
+    <h2 class="text-center">Promociones</h2>
+  </div>
+
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
+        <div class="omni__box">
+          <div class="omni__contenido">
+            <h2>$25.00</h2>
+            <h3>7 Megas</h3>
+            <div class="text-center">
+              <a class="btn btn-primary" href="#">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
+        <div class="omni__box">
+          <div class="omni__contenido">
+            <h2>$29.99</h2>
+            <h3>7 Megas</h3>
+            <small>Paquete Incluye</small>
+            <p>Mas de 80 Canales</p>
+            <div class="text-center">
+              <a class="btn btn-primary" href="#">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
+        <div class="omni__box">
+          <div class="omni__contenido">
+            <h2>$35.00</h2>
+            <h3>10 Megas</h3>
+            <small>Paquete Incluye</small>
+            <p>Mas de 80 Canales</p>
+            <div class="text-center">
+              <a class="btn btn-primary" href="#">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 pt-sm-2 pt-md-2">
+        <div class="omni__box">
+          <div class="omni__contenido">
+            <h2>$45.00</h2>
+            <h3>20 Megas</h3>
+            <small>Paquete Incluye</small>
+            <p>Mas de 80 Canales</p>
+            <div class="text-center">
+              <a class="btn btn-primary" href="#">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="parallax">
+    <div class="ommi__lema">
+      <h2>Internet sin limte de descarga</h2>
+    </div>
+  </section>
+
+  <section class="omni__contacto contenedor p-5">
+    <div class="omni__form">
+      <h2>Contactanos</h2>
+      <p>
+        Envia tu inquietud, en menos de 24 horas, soporte se contactara
+        contigo
+      </p>
+      <a href="https://wa.link/nd2r1n" target="_blank"><i class="omni__iconos fa-solid fa-phone"></i>+503 7670-0749</a>
+      <a href="mailto:noc@omnivision.com.sv" target="_blank">
+        <i class="omni__iconos fa-regular fa-envelope"></i>noc@omnivision.com.sv
+      </a>
+      <a href="#"><i class="omni__iconos fa-solid fa-map-location-dot"></i>Carr. a
+        Chalatenango, com, Caserio Amayo, 300 Metros Al Desvio de Amayo,
+        Tejutla, Chalatenango</a>
+    </div>
+    <form action="#" autocomplete="off">
+      <input class="omni__text" type="text" name="name" id="<em></em>" placeholder="Nombre Completo" />
+      <input class="omni__text" type="email" name="email" id="email" placeholder="juanito@dominio.com" />
+      <textarea class="omni__text" name="message" id="message" cols="" rows=""></textarea>
+      <input class="omni__btn" type="submit" name="send" id="send" value="Escribe mensaje" />
+    </form>
+  </section>
+
+  <section class="ommi__contenedor p-3">
+    <footer class="omni__footer">
+      <div class="omni__empresa">
+        <h4>Redes Sociales</h4>
+        <a href="https://www.facebook.com/omnivision.omnicom" target="_blank"><i
+            class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/omnivision_tv?s=20&t=RXsaF6Bn_3QMUWWY45aaTQ" target="__blank"><i
+            class="fa-brands fa-twitter"></i></a>
+        <a href="https://wa.link/nd2r1n" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="omni__empresa">
+        <h4>Soporte Tecnico</h4>
+        <small>NOC: +503 7670-0749</small><br />
+        <small>noc@omnivision.com.sv</small><br />
+      </div>
+      <div class="omni__empresa">
+        <h4>Atencion al cliente</h4>
+        <small>Chalatenango: <span>+503 7733-8982</span></small><br />
+        <small>La Palma: <span>+503 7870-9928</span></small><br />
+        <small>Amayo: <span>+503-7870-9591</span></small><br />
+      </div>
+    </footer>
+  </section>
+  </main>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script> -->
+
+<!--   <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script> -->
+</body>
+
 </html>
