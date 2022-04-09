@@ -26,65 +26,12 @@ body {
 
 /*Fin de estilo de menu*/
 
-.omni__leyenda h2 {
+.btn-primary{
+  border-radius: 20px;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  font-size: 4rem;
-  color: #003366;
-}
-
-.contenedor {
-  width: var(--width-container);
-  max-width: var(--max-width-container);
-  padding: var(--padding-container);
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.omni__portada {
-  height: 50vh;
-  min-width: 500px;
-  position: relative;
-  --padding-container: 0;
-}
-
-.omni__bienvenido {
-  display: grid;
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "a a";
-  place-items: center;
-  gap: 20px;
-}
-
-@media only screen and (max-width: 576px) {
-  .omni__info {
-    grid-column-start: a;
-    grid-column-end: a;
-    text-align: center;
-  }
-  .omni__img {
-    display: none;
-  }
-}
-.omni__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 4rem;
-}
-.omni__parrafo {
+  font-weight: 400;
   font-size: 1.2rem;
-  margin: 25px 0;
-}
-.omni__btn {
-  display: inline;
-  text-align: center;
-  text-decoration: none;
-}
-.omni__img {
-  width: 95%;
+  color: #fff;
 }
 
 /*Inicio de estilos de about*/
