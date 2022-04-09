@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+body {
+  background: rgb(240, 240, 240);
+}
+
 :root {
   --color-primary: #003366;
   --color-title: #000;
@@ -84,68 +88,122 @@
 }
 
 /*Inicio de estilos de about*/
-.omni__about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "b b";
-  gap: 20px;
+.omni__contenedor {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.card__omni {
+  width: 50%;
+  margin: 20px;
+  transition: all 300ms ease;
+}
+.card__omni:hover {
+  width: 50%;
+  /* height: 300px; */
+}
+.card__omni .omni__cover {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.card__omni .omni__cover img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms ease;
+}
+.card__omni:hover .omni__cover img {
+  top: 0px;
+}
+.card__omni .img__back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+}
+.img__back {
+  background-image: url("../images/back2.jpg");
 }
 
-.omni__about P {
+.card__omni .omni__descripcion {
+  background: #fff;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+}
+.card__omni .omni__descripcion h2 {
+  text-align: center;
+  margin-top: 10px;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 1.5rem;
+  color: #183762;
+}
+.card__omni .omni__descripcion p {
   text-align: justify;
-  color: #003366;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #183762;
 }
 
-@media only screen and (max-width: 576px) {
-  .omni__about .omni_a {
-    grid-template-areas: "b b";
-    grid-column-start: b;
-    grid-column-end: b;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .omni__about .omni_a {
-    grid-template-areas: "b b";
-    grid-column-start: b;
-    grid-column-end: b;
-  }
-}
-/*Fin de estilos de about/
-
+/*Fin de estilos de about*/
 
 /*Inicio de estilos de servicios*/
-.omni__servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr;
-  gap: 20px;
-}
-
-.omni__datos {
+.omni__servicios__box {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+.omni__servicio__box {
+  width: 198px;
+  height: 198px;
+  margin: 1px;
+  display: flex;
   justify-content: center;
-  text-align: center;
-  width: 90%;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  transition: all 300ms ease;
 }
 
-.omni__servicios .omni__datos i {
-  font-size: 4rem;
+.omni__servicio__box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+  background: #8dc2f6;
+  z-index: 1;
 }
-.ommi__servivio {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #003366;
-  font-size: 1.2rem;
+.omni__servicio__box:hover i {
+  color: #fff;
+}
+.omni__servicio__box:hover small {
+  color: #fff;
+}
+
+.omni__servicio__box i {
+  font-size: 35px;
+  color: #183762;
+}
+.omni__servicio__box small {
+  margin-top: 20px;
+  font-size: 13px;
   text-transform: uppercase;
+  color: #183762;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
-
-.bi-apple {
-  font-size: 3rem;
-}
+/*Fin de estilos de servicios*/
 
 /*Inicio de estilos de promociones*/
 
@@ -166,15 +224,12 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .omni__box{
+  .omni__box {
     max-width: 100%;
   }
 }
 
-
-
 /*Fin de estilos de promociones*/
-
 
 .omni__contenido h2 {
   font-family: "Roboto", sans-serif;
@@ -296,7 +351,10 @@ textarea {
 }
 
 .omni__contacto .omni__btn:hover {
-  background: #fff;
+  background: #8dc2f6;
+}
+.omni__iconos {
+  color: #003366;
 }
 /*Fin de estilo de formulario me contacto*/
 
